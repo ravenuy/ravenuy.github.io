@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+#grid-title {
+    margin-top: 20px;
+    color: cyan;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    flex-grow: 1;
+}
+
+#controls-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 2px;
+    aspect-ratio: 1;
+    width: 50%; /* Set grid width to 50% of container */
+}
+
+.grid-cell {
+    border: 1px solid yellow;
+}
+
+.highlight {
+    background-color: red;
+}
+
+#coordinates {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#generate-btn,
+#copy-btn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+#generate-btn:hover,
+#copy-btn:hover {
+    background-color: #ccc;
+}
+
+#controls-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+#copy-success {
+    color: red;
+    display: none;
+    margin-top: 10px; /* Add margin to position it below the button */
+}
