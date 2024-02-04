@@ -42,24 +42,24 @@ document.addEventListener('DOMContentLoaded', function() {
     copyBtn.addEventListener('click', function() {
         const textToCopy = "1 small passive";
         
-        // Create a temporary input element
+        
         const tempInput = document.createElement('input');
         tempInput.value = textToCopy;
         document.body.appendChild(tempInput);
 
-        // Select and copy the content
+    
         tempInput.select();
         document.execCommand('copy');
 
-        // Remove the temporary input
+       
         document.body.removeChild(tempInput);
 
-        // Display success text
+        
         copySuccessText.innerText = `"${textToCopy}" copied`;
         copySuccessText.style.color = 'red';
         copySuccessText.style.display = 'block';
 
-        // Hide the success text after a few seconds (optional)
+        
         setTimeout(() => {
             copySuccessText.style.display = 'none';
         }, 3000);

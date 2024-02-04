@@ -33,7 +33,7 @@ body {
     grid-template-rows: repeat(12, 1fr);
     gap: 2px;
     aspect-ratio: 1;
-    width: 50%; /* Set grid width to 50% of container */
+    width: 50%; 
 }
 
 .grid-cell {
@@ -68,11 +68,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 10px; /* Add margin for spacing */
+    margin-top: 10px; 
 }
 
 #copy-success {
     color: red;
     display: none;
-    margin-top: 10px; /* Add margin to position it below the button */
+    margin-top: 10px; 
 }
